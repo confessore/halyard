@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <!--<PlatformTarget Condition="'$(Platform)'=='x64'">x64</PlatformTarget>
+    <PlatformTarget Condition="'$(Platform)'=='x86' or '$(Platform)'=='Any CPU'">x86</PlatformTarget>-->
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.0-beta.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0-preview-20211130-02" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Halyard\Halyard.csproj" />
+  </ItemGroup>
+
+</Project>
